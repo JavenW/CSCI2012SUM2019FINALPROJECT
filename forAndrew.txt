@@ -1,0 +1,18 @@
+<%
+		Vector<String> fileBank = new Vector<String>();
+		fileBank.add("bubblesort.txt"); fileBank.add("insertionsort.txt");
+		fileBank.add("selectionsort.txt");
+		Random rand = new Random();
+		int myPick = rand.nextInt(100)%(fileBank.size());
+		readfile myReader = new readfile();
+		out.println(fileBank.get(myPick));
+		String filename = fileBank.get(myPick);
+		myReader.read(request.getServletContext().getRealPath(filename));
+		int numOfWord = myReader.num;
+		out.println(numOfWord);
+		Vector<String> myContent = myReader.contents;
+		for(int i = 0; i < myContent.size();i++){
+			out.println(myContent.get(i));
+		}
+					
+	%>
