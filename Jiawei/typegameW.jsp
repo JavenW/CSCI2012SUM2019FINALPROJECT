@@ -18,7 +18,6 @@
 		<title>Typing game</title>
 		<link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="typinggame2.css">
-		<link rel="stylesheet" href="main.css">
 	</head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
@@ -143,7 +142,7 @@
 						{
 							if(words[j].trim()=="")
 							{
-								System.out.println("qq");
+								//System.out.println("qq");
 							}else{
 								vecTemp.add(words[j]);
 							}
